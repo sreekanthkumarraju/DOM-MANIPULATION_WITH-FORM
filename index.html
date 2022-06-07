@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title >Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div>
+    <div>
+        
+        <p id="description">DOM manipulation with Forms</p>
+    <form   id='form'>
+        
+        <label id="name-label">Name</label>
+        <input type="text"  class='array'  id="first-name" placeholder=" FirstName">
+        <input type="text" class='array' id="last-name" placeholder="LastName">
+        
+        <label id="email-label">Email</label>
+        <input type="text"  class='array'  id='email' placeholder="EmailAddress" >
+        
+        <label id="number-label">PinCode</label>
+        <input type="number" class='array' id="pincode" placeholder="PinCode">
+        
+        <label>Gender</label>
+        <input type="radio" name="gender" id="gender" value="Male"><span>Male</span>
+        <input type="radio" name="gender" id="gender" value="Female"><span>FeMale</span>
+        <input type="radio" name="gender" id='gender' value="Others"><span>Others</span>
+        
+        <label>Choice of Food</label>
+        <select name="food" id='food' size=4 multiple>
+            <option value='Fish Biryani'>Fish Biryani</option>
+            <option value='Chicken Biryani'>Chicken Biryani</option>
+            <option value='Mutton Biryani'>Mutton Biryani</option>
+            <option value='Prawns Biryani'>Prawns Biryani</option>
+            <option value='Chicken Dhum Biryani' >Chicken Dhum Biryani </option>          
+        </select>
+        <p id='error'>minimum 2 options need to be selected</p>
+
+        <label id="city-label">city</label>
+        <input type="text" class='array'  id='city' placeholder="City" >
+        
+        <label id="state-label">State</label>
+        <input type="text" class='array'  id='state' placeholder="state" >
+        
+        <button onclick="click1()" id="submit">Submit</button>
+    </form>
+    
+   </div>
+
+   <div class="result">
+       <table class="table">
+           <caption>USER INFORMATION</caption>
+           <thead>
+               <tr>
+                   <th>FirstName</th>
+                   <th>LastName</th>
+                   <th>EmailAddress</th>
+                   <th>PinCode</th>
+                   <th>Gender</th>
+                   <th>Food</th>
+                   <th>City</th>
+                   <th>State</th>
+               </tr>
+           </thead>
+           <tbody >
+
+           </tbody>
+       </table>
+       
+   </div>
+</div>
+  <script src="index.js"></script>
+
+ 
+</body>
+</html>
